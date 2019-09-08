@@ -19,7 +19,7 @@ spring:
   profiles: dev
 
 leaf:
-  name: mall-leaf
+  name: leaf
   segment:
     enable: false
 #  jdbc:
@@ -44,7 +44,7 @@ spring:
   profiles: beta
 
 leaf:
-  name: mall-leaf
+  name: leaf
   segment:
     enable: false
   #  jdbc:
@@ -68,7 +68,7 @@ spring:
   profiles: stage
 
 leaf:
-  name: mall-leaf
+  name: leaf
   segment:
     enable: false
   #  jdbc:
@@ -79,7 +79,7 @@ leaf:
   snowflake:
     enable: true
     zk:
-      address: stage.zk.edianzu.com
+      address: 127.0.0.1
       port: 2181
 
 nacos:
@@ -92,7 +92,7 @@ spring:
   profiles: online
 
 leaf:
-  name: mall-leaf
+  name: leaf
   segment:
     enable: false
   #  jdbc:
@@ -103,7 +103,7 @@ leaf:
   snowflake:
     enable: true
     zk:
-      address: mall.zk.edianzu-inc.cn
+      address: 127.0.0.1
       port: 2181
 
 nacos:
